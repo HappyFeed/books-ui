@@ -4,7 +4,7 @@ const targetPath = './src/environments/environment.prod.ts';
 
 const envConfigFile = `export const environment = {
   production: true,
-  baseUrl: 'https://a-books.herokuapp.com/',
+  baseUrl: '${process.env.BASE_URL}',
 };
 `;
 
